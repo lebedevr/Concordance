@@ -1,9 +1,9 @@
 plugins {
     id("java")
+    id("application")
 }
 
 group = "com.lebedevrs9"
-version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -17,4 +17,10 @@ dependencies {
 
 tasks.getByName<Test>("test") {
     useJUnitPlatform()
+}
+
+val javaMainClass = "com.lebedevrs9.testtask.Concordance"
+
+application {
+    mainClassName = javaMainClass
 }

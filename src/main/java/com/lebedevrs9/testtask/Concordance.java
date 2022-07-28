@@ -12,7 +12,7 @@ class Concordance {
     public static void main(String[] args) {
         String text = getText(args);
         String result = new Concordance().processText(text);
-        System.out.println("Result:");
+        System.out.println("Result:\n");
         System.out.println(result);
     }
 
@@ -88,7 +88,7 @@ class Concordance {
             String fileName = args[0];
             try {
                 text = Files.readString(Path.of(fileName));
-                System.out.println("File with path: " + fileName + " successfully loaded");
+                System.out.println("File with path: " + fileName + " successfully loaded\n");
             } catch (IOException e) {
                 System.out.println("Could not find file with path: " + fileName);
                 System.out.println("Will run program with test example\n");

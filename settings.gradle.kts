@@ -1,2 +1,2 @@
-rootProject.name = "arista-test-task"
+rootProject.name = "concordance"
 
